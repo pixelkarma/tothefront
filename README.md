@@ -1,101 +1,48 @@
 # ToTheFront
 
-ToTheFront is a lightweight macOS menu bar utility that fixes an annoying windowing behavior: when you click a background window from another app, macOS may only bring that one window forward. ToTheFront brings the whole app forward together, so related windows stay grouped the way you expect.
+ToTheFront is a small macOS menu bar utility that changes how app windows come forward.
 
-It stays out of the way, lives in the menu bar, launches fast, and focuses on one job: making multi-window apps feel more consistent.
+When you click a background window, macOS can activate the app without bringing its other open windows with it. ToTheFront makes that behavior feel more consistent by promoting the app's open windows together.
 
-## Why It Exists
+## What It Solves
 
-If you work with Finder, Xcode, CotEditor, BBEdit, Terminal, browsers, or any app that commonly has several windows open at once, you have probably seen this:
+This is for people who keep multiple windows open in apps like Finder, editors, terminals, and browsers.
 
-- You click a background window.
-- macOS activates the app.
-- But sibling windows can remain buried behind other apps.
+Without ToTheFront:
 
-ToTheFront fixes that moment. Click one background window, and the app comes forward as a group.
+- You click a background window
+- The app activates
+- Other windows from that same app may stay buried
 
-## What It Does
+With ToTheFront:
 
-- Detects clicks on background app windows
-- Activates the clicked app and brings its windows forward together
-- Runs as a native AppKit menu bar utility
-- Lets you enable or disable behavior instantly
-- Supports optional app filtering so you can exclude apps or include only selected apps
-- Offers modifier-key behavior so activation can be always on, shift-to-activate, or shift-to-bypass
-- Can show in the menu bar, Dock, or both depending on your preference
+- You click a background window
+- The app comes forward in a more complete, predictable way
 
-## Built for macOS
+## Features
 
-ToTheFront is a native macOS app written in Swift with AppKit. It is not an Electron app, not a browser wrapper, and not a background script bundle pretending to be an app.
+- Native macOS app built with Swift and AppKit
+- Lightweight menu bar utility
+- Enable or disable instantly
+- Optional app list modes:
+  exclude selected apps, or include only selected apps
+- Optional Shift-key behavior:
+  always active, Shift to activate, or Shift to bypass
+- Optional menu bar and Dock visibility controls
 
-The app is designed to feel at home on macOS:
+## Why Use It
 
-- Menu bar utility design
-- Native settings window
-- Native app list and file picker
-- Minimal idle CPU usage
-- Direct-download friendly packaging
+ToTheFront is meant to solve one specific annoyance without turning into a full window manager.
 
-## Who It Is For
-
-ToTheFront is especially useful if you:
-
-- Work with multiple Finder windows across projects
-- Keep several editor or terminal windows open at once
-- Use more than one display
-- Prefer click-to-focus behavior that feels more predictable
-- Want a small utility instead of a large window manager
-
-## Key Features
-
-### Bring the whole app forward
-
-Clicking a background window should not leave the rest of that app scattered behind other apps. ToTheFront promotes the app as a unit, which makes multi-window workflows feel cleaner and faster.
-
-### App filtering
-
-You can decide how broadly the behavior applies:
-
-- Exclude these apps
-- Include only these apps
-
-This makes it easy to keep the behavior system-wide while carving out exceptions, or to limit it to only a few apps where it is most useful.
-
-### Modifier-key control
-
-You can choose how the Shift key affects activation:
-
-- Do Nothing
-- Activate System
-- Deactivate System
-
-That gives you a quick way to make the behavior conditional without opening settings.
-
-### Simple, visible controls
-
-From the menu bar you can:
-
-- Open Settings
-- Enable or disable the app
-- Quickly add or remove the current app from your list
-- Quit the utility
-
-## Why Not a Full Window Manager?
-
-Because sometimes you do not want one.
-
-ToTheFront does not try to tile windows, replace Mission Control, script the desktop, or impose a new workspace model. It solves one specific frustration with as little friction as possible.
+It does not try to tile windows, replace Spaces, or impose a different workflow. It simply makes app activation feel better for multi-window use.
 
 ## Installation
 
-Download the latest DMG, open it, drag **ToTheFront** into **Applications**, and launch it.
-
-On first run, macOS may ask you to confirm background or login-item related behavior depending on your configuration and OS version.
+1. Download the latest DMG.
+2. Open it.
+3. Drag **ToTheFront** into **Applications**.
+4. Launch the app.
 
 ## Privacy
 
-ToTheFront is a local desktop utility. It does not need an account, and it does not depend on a remote service to do its job.
-
-## Summary
-
-ToTheFront makes macOS feel more coherent for multi-window work. If you have ever clicked a background window and wondered why the rest of that app stayed behind, this utility is for you.
+ToTheFront is a local desktop utility. It does not require an account or a cloud service.
